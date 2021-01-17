@@ -31,4 +31,11 @@ class GuessFormSubmissionsController < ApplicationController
             render json: @new_guess_form_submission.errors.messages
         end
     end
+
+    def destroy
+        found_guess_form_submission = GuessFormSubmission.find(params[:id])
+        @deleted_guess_form_submission = found_guess_form_submission.destroy
+
+        render json: @deleted_guess_form_submission
+    end
 end
