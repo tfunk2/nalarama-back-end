@@ -1,0 +1,2 @@
+class GuessFormSubmissionsController < ApplicationController
+end

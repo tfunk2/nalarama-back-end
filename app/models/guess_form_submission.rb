@@ -1,0 +1,2 @@
+class GuessFormSubmission < ApplicationRecord
+end
